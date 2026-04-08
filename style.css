@@ -1,0 +1,171 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+background-color: #2A9D8F;
+text-align: center;
+color: #ddd;
+}
+.container{
+
+height: 70vmin;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.box-c{
+    width: 60vmin;
+    height: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+height: 18vmin;
+width: 18vmin;
+background-color: #E9C46A;
+border-radius: 1rem;
+border: none;
+box-shadow: 0 0 1rem rgb(0,0,0,0.3);
+font-size: 8vmin;
+color: #264653;
+}
+#resetbox{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #E76F51;
+    color: #264653;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+}
+#newgame{
+     padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #E76F51;
+    color: #264653;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+.winner{
+width: 20vmin;
+height: 5vmin;
+background-color: #F4A261;
+font-size: 1.25rem;
+font-weight: 600;
+color: #264653;
+margin-left: 64vmin;
+text-align: center;
+border-radius: 1rem;
+ margin-top: 2rem;
+}
+.hide{
+display: none;
+
+} */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #2A9D8F;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #f4f4f4;
+    text-shadow: 2px 2px #264653;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.box-c {
+    width: 60vmin;
+    height: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    background-color: #E9C46A;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: #264653;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.box:hover:not(:disabled) {
+    background-color: #f4a261;
+    transform: scale(1.05);
+}
+
+.box:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#resetbox,
+#newgame {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    background-color: #E76F51;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#resetbox:hover,
+#newgame:hover {
+    background-color: #f28466;
+    transform: scale(1.05);
+}
+
+.winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4A261;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #264653;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin: 1.5rem auto 0;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.hide {
+    display: none;
+}
